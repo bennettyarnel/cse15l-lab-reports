@@ -1,6 +1,10 @@
+
+# Lab Report 1
+## Bennett Yarnell
+
 ![image](Ex12.png)
 
-cd:
+## cd:
 
 1) CD with no arguments: Running CD with no arguments returns you to the home directory from whatever directory you are currently in. If you are in the home directory already, you just won't go anywhere.
    
@@ -8,7 +12,7 @@ cd:
    
 3) Because the change directory command is meant for directories / folders and not files, running the command with a path to a file will result in the default error message "No such file or directory." CD is a valid command only for directories.
 
-ls:
+## ls:
 
 1) The ls or list command shows information about various files or directories, depending on where you currently are in your environment. In the case of just ls with no arguments, the contents of the current directory will be displayed, in this case lecture1. If messages was not a subdirectory of lecture1 it would display both directories but because lecture1 is the only directory in the home directory that is all that is displayed when running ls with no arguments
    
@@ -18,7 +22,7 @@ ls:
 
 ![Image](Ex3.png)
 
-cat:
+## cat:
 
 1) when running cat with no arguments you are prompted to type in the name of files so that the command can be used to display the content of said files after you type them in, but there is no actual output because the purpose of cat is to display the content of files and with no file path there is nothing to display.
    
