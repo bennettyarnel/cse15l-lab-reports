@@ -9,3 +9,7 @@ ls:
 1) The ls or list command shows information about various files or directories, depending on where you currently are in your environment. In the case of just ls with no arguements, the contents of the current directory will be displayed, in this case lecture1. If messages was not a subdirectory of lecture1 it would display both directories but because lecture1 is the only directory in the home directory that is all that is displayed when running ls with no arguements
 2) ls lecture1 lists the contents of the lecture1 directory, including messages which is also a directory it is just inside the lecture1 directory.
 3) Running ls with a path to a text file just displays the path to the text file because the purpose of ls is to display the contents of directories so when given a file path the command will just display that file, not it's contents. 
+
+![image](Ex3.png)
+
+
