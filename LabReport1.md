@@ -6,17 +6,19 @@
 
 ## cd:
 
-1) ```cd``` with no arguments: Running ```cd``` with no arguments returns you to the home directory from whatever directory you are currently in. If you are in the home directory already, you just won't go anywhere. Running ```cd``` without 
+1) ```cd``` with no arguments: Running ```cd``` with no arguments returns you to the home directory from whatever directory you are currently in. If you are in the home directory already, you just won't go anywhere. The working directory after running ```cd``` with no arguments is the home directory. Executing in this way does not cause an error. 
+
+3) ```cd``` with directory path: The change directory command with a directory path will take you to the new directory you put in the command line. That is the point of the change directory command. The working directory after running this command is the directory in the path. Executing in this way does not cause an error. 
    
-2) CD with directory path: The change directory command with a directory path will take you to the new directory you put in the command line. That is the point of the change directory command.
-   
-3) Because the change directory command is meant for directories / folders and not files, running the command with a path to a file will result in the default error message "No such file or directory." CD is a valid command only for directories.
+4) Because the change directory command is meant for directories / folders and not files, running the command with a path to a file will result in the default error message "No such file or directory." ```cd``` is a valid command only for directories. The working directory is not switched after running the command in this way, it just causes an error. 
 
 ## ls:
 
-1) The ls or list command shows information about various files or directories, depending on where you currently are in your environment. In the case of just ls with no arguments, the contents of the current directory will be displayed, in this case lecture1. If messages was not a subdirectory of lecture1 it would display both directories but because lecture1 is the only directory in the home directory that is all that is displayed when running ls with no arguments
+The ```ls``` command does not change your working directory, it just lists the current directories or files. 
+
+1) The ```ls``` or list command shows information about various files or directories, depending on where you currently are in your environment. In the case of just ```ls``` with no arguments, the contents of the current directory will be displayed, in this case ```lecture1```. If ```messages``` was not a subdirectory of ```lecture1``` it would display both directories but because ```lecture1``` is the only directory in the home directory that is all that is displayed when running ```ls``` with no arguments. Executing in this way does not cause an error. 
    
-2) ls lecture1 lists the contents of the lecture1 directory, including messages which is also a directory it is just inside the lecture1 directory.
+2) ```ls lecture1``` lists the contents of the ```lecture1``` directory, including messages which is also a directory it is just inside the ```lecture1``` directory. 
    
 3) Running ls with a path to a text file just displays the path to the text file because the purpose of ls is to display the contents of directories so when given a file path the command will just display that file, not it's contents. 
 
