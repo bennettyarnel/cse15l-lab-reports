@@ -18,9 +18,9 @@ The ```ls``` command does not change your working directory, it just reads or co
 
 1) The ```ls``` or list command shows information about various files or directories, depending on where you currently are in your environment. In the case of just ```ls``` with no arguments, the contents of the current directory will be displayed, in this case ```lecture1```. If ```messages``` was not a subdirectory of ```lecture1``` it would display both directories but because ```lecture1``` is the only directory in the home directory that is all that is displayed when running ```ls``` with no arguments. Executing in this way does not cause an error. 
    
-2) ```ls lecture1``` lists the contents of the ```lecture1``` directory, including messages which is also a directory it is just inside the ```lecture1``` directory. 
+2) ```ls lecture1``` lists the contents of the ```lecture1``` directory, including messages which is also a directory it is just inside the ```lecture1``` directory. This is not an error, it is the correct function of the command. 
    
-3) Running ls with a path to a text file just displays the path to the text file because the purpose of ls is to display the contents of directories so when given a file path the command will just display that file, not it's contents. 
+3) Running ```ls``` with a path to a text file displays the path to the text file and some information about the file itself. It will not display the content of the file, that is not it's design. This is not an error, it is the intended function of the command.  
 
 ![Image](Ex3.png)
 
@@ -28,7 +28,7 @@ The ```ls``` command does not change your working directory, it just reads or co
 
 the ```cat``` command does not change your working directory, , it just displays the contents of files. 
 
-1) when running ```cat``` with no arguments you are prompted to type in the name of files so that the command can be used to display the content of said files after you type them in, but there is no actual output because the purpose of ```cat``` is to display the content of files and with no file path there is nothing to display. This is not an error, you are being prompted to enter a file path or file so ```cat1``` can display contents.
+1) Running the ```cat``` command without any arguments will result in the system waiting for input and then upon receving in from the keyboard it prints it back out. The purpose of the ```cat``` command is is to display contents of files, and while a direct error will not be thrown when executing in this way it is not the function of the command. 
    
 2) running ```cat lecture1``` throws an error because the purpose of ```cat``` is to read the content of files, not directories, and because ```lecture1``` is a directory it is not able to read it and return it's contents. 
    
