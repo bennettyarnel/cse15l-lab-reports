@@ -32,6 +32,6 @@ the ```cat``` command does not change your working directory, , it just displays
    
 2) running ```cat lecture1``` throws an error because the purpose of ```cat``` is to read the content of files, not directories, and because ```lecture1``` is a directory it is not able to read it and return it's contents. 
    
-3) running ```cat``` along with a path to a file will display the content of said file, in the photo ```cat``` is used to display the content of the ```irish.txt``` file which is the words Hello World in Irish. This is not an error it is the correct function of the command. 
+3) running ```cat``` along with a path to a file will display the content of said file, in the photo ```cat``` is used to display the content of the ```es-mx.txt``` file which is the words Hello World in Spainish. This is not an error it is the correct function of the command. 
 
 
