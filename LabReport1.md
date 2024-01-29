@@ -26,10 +26,12 @@ The ```ls``` command does not change your working directory, it just lists the c
 
 ## cat:
 
-1) when running ```cat``` with no arguments you are prompted to type in the name of files so that the command can be used to display the content of said files after you type them in, but there is no actual output because the purpose of ```cat``` is to display the content of files and with no file path there is nothing to display.
+the ```cat``` command does not change your working directory, , it just displays the contents of files. 
+
+1) when running ```cat``` with no arguments you are prompted to type in the name of files so that the command can be used to display the content of said files after you type them in, but there is no actual output because the purpose of ```cat``` is to display the content of files and with no file path there is nothing to display. This is not an error, you are being prompted to enter a file path or file so ```cat1``` can display contents.
    
-2) running ```cat lecture1``` throws an error because the purpose of ```cat``` is to read the content of files, not directories, and because ```lecture1``` is a directory it is not able to read it and return it's contents.
+2) running ```cat lecture1``` throws an error because the purpose of ```cat``` is to read the content of files, not directories, and because ```lecture1``` is a directory it is not able to read it and return it's contents. 
    
-3) running ```cat``` along with a path to a file will display the content of said file, in the photo ```cat``` is used to display the content of the ```irish.txt``` file which is the words Hello World in Irish.
+3) running ```cat``` along with a path to a file will display the content of said file, in the photo ```cat``` is used to display the content of the ```irish.txt``` file which is the words Hello World in Irish. 
 
 
