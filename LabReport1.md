@@ -14,7 +14,7 @@
 
 ## ls:
 
-The ```ls``` command does not change your working directory, it just lists the current directories or files. 
+The ```ls``` command does not change your working directory, it just reads or concatenates and then displays files. 
 
 1) The ```ls``` or list command shows information about various files or directories, depending on where you currently are in your environment. In the case of just ```ls``` with no arguments, the contents of the current directory will be displayed, in this case ```lecture1```. If ```messages``` was not a subdirectory of ```lecture1``` it would display both directories but because ```lecture1``` is the only directory in the home directory that is all that is displayed when running ```ls``` with no arguments. Executing in this way does not cause an error. 
    
