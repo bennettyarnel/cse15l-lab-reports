@@ -39,7 +39,17 @@ In this instance all of the above explanations about what happens in the ```Serv
 # Part 2
 
 ![image](1.png)
-The path to my public key is ```~/.ssh/knownhosts
+The path to my public key is ```~/.ssh/knownhosts```
+
+![image](photo.png)
+The path to the public key on the ```ieng6``` server is also ```~/.ssh/knownhosts``` 
+
+
+
+
+# Part 3
+
+I learned everything I know about directories, folders, terminal commands, local hosts, secure shells, and URLs these past two weeks. I would say that for me personally the most interesting thing I've learn so far is how to create and edit web servers using getQuery and getPath and having information displayed on your own locally hosted website. 
 
 
 
