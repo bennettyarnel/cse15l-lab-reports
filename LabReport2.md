@@ -21,6 +21,8 @@ These methods are String methods, Integer Methods, HTTPServer Methods, URI metho
 
 In this image, the URL is ```https://localhost:3500/add-message?s=labReportFun&user=BennettY```. The port is obviously ```3500```. When I run ```ChatServer``` the first method call is to the ```start``` method in the ```Server``` class and then a series of method calls and object creatuons result in a server using the 3500 port and the printing of ```Server Started!." Then I enter the rest of the URL into the browser, and the code recognizes the presence of the "add-message" string which starts the first  ```if``` condition of ```handlerequest``` which then creates and manipulates String arrays as mentioned above. 
 
+The values which were changed in each entering of a new URL was the value of ```initial``` which is the master string which gets concatenated with the new content from the URL
+
 
 
 # Image 2 of ChatServer Running:
