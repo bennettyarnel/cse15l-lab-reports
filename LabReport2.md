@@ -1,16 +1,20 @@
 # Lab Report 2: Servers and SSH Keys
+## Bennett Yarnell 
 
-# Bennett Yarnell 
 
-# Code for ChatServer:
+
+# Part 1
+
+
+### Code for ChatServer:
 ![image](codeitself.png)
 Above is my implentation of the ```ChatServer``` class, which creates two String arrays of the contents of the URL and accesses these arrays to print accurate messages on the locally hosted web server.
 
-# Code for Server:
+### Code for Server:
 ![image](Server.png)
 Above is the implementation of Server which was discussed in Lab.
 
-# Image 1 of ChatServer Running:
+### Image 1 of ChatServer Running:
 ![image](serverRunning.png)
 
 Above is how ```ChatServer``` behaves when given a correct URL and multiple entries. In this instance, the method ```handlerequest``` is called because ```/add-message``` is present in the URL. ```handlerequest``` turns the URL into string arrays and then access them, and then adds them to a master string so when entering different URLs the previous interactions are saved. (user: BennettY and user: haoting are an example of different URLs being entered and edited). 
@@ -25,12 +29,20 @@ The values which were changed in each entering of a new URL was the value of ```
 
 
 
-# Image 2 of ChatServer Running:
+### Image 2 of ChatServer Running:
 ![image](failedURL.png)
 
 Above is how ```ChatServer``` behaves when it is given a URL which does not have the substring ```addmessage``` inside it. In this case, the if condition in ```handlerequest``` is passed over and the else returns the string ```404 Not Found!```.
 
 In this instance all of the above explanations about what happens in the ```Server``` class hold true except the port number has changed to be ```4000``` instead of ```3500```. But, because the ```handlerequest``` method does not detect ```/add-message``` the text displayed on the server is ```404 Not Found!```.
+
+# Part 2
+
+![image](1.png)
+The path to my public key is ```~/.ssh/knownhosts
+
+
+
 
 
 
