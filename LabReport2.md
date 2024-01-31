@@ -7,11 +7,21 @@
 Above is my implentation of the ```ChatServer``` class, which creates two String arrays of the contents of the URL and accesses these arrays to print accurate messages on the locally hosted web server.
 
 # Code for Server:
+![image](Server.png)
+Above is the implementation of Server which was discussed in Lab.
 
 # Image 1 of ChatServer Running:
 ![image](serverRunning.png)
 
-Above is how ```ChatServer``` behaves when given a correct URL and multiple entries. In this instance, the method ```handlerequest``` is called because ```addmessage``` is present in the URL. ```handlerequest``` turns the URL into string arrays and then access them, and then adds them to a master string so when entering different URLs the previous interactions are saved. (user: BennettY and user: haoting are an example of different URLs being entered and edited). For this 
+Above is how ```ChatServer``` behaves when given a correct URL and multiple entries. In this instance, the method ```handlerequest``` is called because ```addmessage``` is present in the URL. ```handlerequest``` turns the URL into string arrays and then access them, and then adds them to a master string so when entering different URLs the previous interactions are saved. (user: BennettY and user: haoting are an example of different URLs being entered and edited). 
+
+The methods called in this method are:
+```start```,  ```create```, ```createContext```, ```write```, ```close```, ```getRequestURI```, ```getResponseBody```, ```toString```, ```getBytes```, ```format```, ```parseInt```, ```getPath```, and ```getQuery```.
+These methods are String methods, Integer Methods, HTTPServer Methods, URI methods, and other classes and interfaces from the Server class. 
+
+In this image, the URL is ```https://localhost:3500/add-message?s=labReportFun&user=BennettY```. The port is obviously ```3500```. When I run ```ChatServer``` the first method call is to the ```start``` method in the ```Server``` class and then a series of method calls and object creatuons result in a server using the 3500 port and the printing of ```Server Started!." Then I enter the rest of the URL into the browser, and the code recognizes the presence of the "add-message" string which starts the first  ```if``` condition of ```handlerequest``` which then creates and manipulates String arrays as mentioned above. 
+
+
 
 # Image 2 of ChatServer Running:
 ![image](failedURL.png)
