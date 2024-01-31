@@ -39,13 +39,10 @@ In this instance all of the above explanations about what happens in the ```Serv
 # Part 2
 
 ![image](newphoto.png)
+
+![image](lastphoto.png)
+
 The path to my public key is ```~/.ssh/id_rsa.pub``` and the path to my private key is ```~/.ssh/id_rsa```
-
-
-
-
-
-
 
 
 # Part 3
