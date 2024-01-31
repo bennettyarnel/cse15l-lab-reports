@@ -46,6 +46,8 @@ The path to my public key is ```~/.ssh/id_rsa.pub``` and the path to my private 
 
 
 
+
+
 # Part 3
 
 I learned everything I know about directories, folders, terminal commands, local hosts, secure shells, and URLs these past two weeks. I would say that for me personally the most interesting thing I've learn so far is how to create and edit web servers using getQuery and getPath and having information displayed on your own locally hosted website. 
