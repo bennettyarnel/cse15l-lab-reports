@@ -15,4 +15,4 @@ Above is how ```ChatServer``` behaves when given a correct URL and multiple entr
 # Image 2 of ChatServer Running:
 ![image](failedURL.png)
 
-Above is how ```ChatServer``` behaves when it is given a URL which does not have the substring ```addmessage``` inside it. In this case, the if condition in ```handlerequest``` is passed over and the else returns the string ```404 
+Above is how ```ChatServer``` behaves when it is given a URL which does not have the substring ```addmessage``` inside it. In this case, the if condition in ```handlerequest``` is passed over and the else returns the string ```404 Not Found!```.
