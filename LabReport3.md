@@ -216,6 +216,39 @@ finds all the files with these permission settings in the ```911report``` direct
 ./chapter-10.txt
 ./chapter-11.txt
 ```
+## Works Cited
+
+For this assignment I used one Chat GPT prompt, and used it's output:
+Prompt: ```"four somewhat standard ways to use to find command"```
+Output: 
+```
+The find command in Unix-like operating systems is incredibly versatile and can be used for a wide range of tasks related to searching for files and directories based on various criteria. Here are four standard ways to use the find command:
+
+Search Files by Name: To find files with a specific name in a directory and its subdirectories, you can use the -name option. For example, to find all files named example.txt under the current directory, you would use:
+
+find . -name "example.txt"
+
+Search Files by Type: The find command can search for files of a specific type using the -type option. For example, to find all directories (type d) under the current directory, you would use:
+
+find . -type d
+
+Search Files by Modification Time: To find files modified within a certain time frame, you can use the -mtime option. For example, to find files modified in the last 7 days, you would use:
+
+find . -mtime -7
+
+Execute Commands on Found Files: The -exec option allows you to execute a command on each file found by find. For example, to find all .txt files and count the number of lines in each, you can use:
+
+find . -name "*.txt" -exec wc -l {} \;
+
+These examples demonstrate some of the most common and useful ways to utilize the find command for finding files and directories based on name, type, modification time, and for executing commands on the files found.
+```
+I used this output for three of my four unique untilizations of the find command which I was supposed to find online. I changed them by tailoring them to the ```technical``` directory and using the specific commands on different files and direcorties in the terminal of my local machine. 
+
+I also cited IBM's documentation of the find command to find additonal information. Linked below
+
+```
+https://www.ibm.com/docs/en/aix/7.1?topic=files-finding-find-command
+``` 
 
 
 
