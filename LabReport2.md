@@ -44,6 +44,10 @@ In this instance all of the above explanations about what happens in the ```Serv
 
 ![image](lastphoto.png)
 
+![image](lastPhoto.png)
+
+The path to the public key on the remote server is ```~/.ssh/authorized_keys```
+
 The path to my public key is ```~/.ssh/id_rsa.pub``` and the path to my private key is ```~/.ssh/id_rsa```
 
 
