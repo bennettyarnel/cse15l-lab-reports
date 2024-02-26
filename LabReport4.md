@@ -33,8 +33,8 @@ Keys Pressed: ```vim <space> ListExamples.java <enter> 43j <enter> 3e <enter> x 
 
 This step involves using ```vim``` to edit the file so the tests run correctly. I used ```vime <filename>``` to enter the file, and then used ```<line number> j``` to jump the correct line number, and then used <word number> e to jump to the end of the third word. Then I used ```x``` to delete the 1 and entered ```insert mode``` using ```i``` then I changed the 1 to a 2 and pressed ```esc``` and then saved and exited using ``` :wq ```
 
-## Step 5```
-![image!](Step5.png)
+## Step 5
+![image!](Real5.png)
 
 Keys Pressed: ```:q <enter> bash <space> test.sh <enter>```
 
