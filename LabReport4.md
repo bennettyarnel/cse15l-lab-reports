@@ -43,6 +43,6 @@ This step involves me exiting ```vim``` using ```:q``` which is how you quit. Th
 ## Step 6
 ![image](Step6.png)
 
-Keys Pressed: ```git <space> commit <space> -a <down> <down> <down> <down> <down> x <down> x <down> i Edited the ListExamples.java file in order to successfully run bash tests. :q git push <enter>'''
+Keys Pressed: ```git <space> commit <space> -a <down> <down> <down> <down> <down> x <down> x <down> i Edited the ListExamples.java file in order to successfully run bash tests. :q git push <enter>```
 
 This step involves me committing the file using ```git commit``` and then adding it to my own GitHub using ```git push```. I created my own commit message by editing the text which appears after the command ```git commit -a``` to include my message: ```Edited the ListExamples.java file in order to successfully run bash tests.``` then I used ```:q``` to return to terminal where the message is displayed. Then I used ```git push``` to add the repository to my personal GitHub account. 
