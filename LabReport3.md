@@ -15,7 +15,7 @@ public void testReverseInPlaceFailure() {
     assertArrayEquals(new int[]{4, 3, 2, 1}, arr); 
 
 ```
-This test failed, with the following result: ``` Expected [2] but was [3] ```. This indicates there is a bug in the methods handling of arrays. Looking at the method, it's clear that because the method tries to swap every entry in the array all in one loop that swapped entries will get overwritten 
+This test failed, with the following result: ``` Expected [2] but was [3] ```. This indicates there is a bug in the methods handling of arrays. Looking at the method, it's clear that because the method tries to swap every entry in the array all in one loop that swapped entries will get overwritten, creating an incorrect result.
 
 ## Non Failing Input
 
