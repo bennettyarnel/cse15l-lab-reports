@@ -9,21 +9,27 @@
 
 ```
 @Test
-  public void testFailure(){
-    double [] array = new double [] {7.9};
-    assertEquals(7.9, ArrayExamples.averageWithoutLowest(array), 0.000001);
-    }
+public void testReverseInPlaceFailure() {
+    int[] arr = {1, 2, 3, 4};
+    ArrayExamples.reverseInPlace(arr);
+    assertArrayEquals(new int[]{4, 3, 2, 1}, arr); 
+
 ```
+This test failed, with the following result: ``` Expected [2] but was [3] ```. This indicates there is a bug in the methods handling of arrays. Looking at the method, it's clear that because the method tries to swap every entry in the array all in one loop that swapped entries will get overwritten 
 
 ## Non Failing Input
 
 ```
 @Test
-  public void testSuccess(){
-    double [] array = new double [] {0.0, 0.0};
-    assertEquals(0.0, ArrayExamples.averageWithoutLowest(array), 0.000001);
-    }
+public void testReverseInPlaceWithSingleElement() {
+    int[] arr = {1};
+    ArrayExamples.reverseInPlace(arr);
+    assertArrayEquals(new int[]{1}, arr);
+}
+
 ```
+This test will pass because it does not contain enough elements for the flawed logic to become a problem, nothing gets overwritten or incorrectly changed, or even really swapped, because there is no element to take the place of ```1```.
+
 ## Symptom (Test failure and Test success)
 ![image](testTest.png)
 Above is the test which has a non zero value as the higher of two numbers failing the test, and a test which has two zero values passing the test.
