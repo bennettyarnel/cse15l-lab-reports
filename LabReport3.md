@@ -44,7 +44,7 @@ This code should work as intended, as I've removed the hardcoded return value of
 
 This command finds all files or directories within the current working directory of the given type
 
-The ```find . -type d``` command finds all the directories in the current working directory which is ```technical```. The output of the command is 
+The ```find . -type d``` command finds all the directories in the current working directory which is ```technical```. The output of the ```find . -type d``` command is: 
 ```.
 ./government
 ./government/About_LSC
