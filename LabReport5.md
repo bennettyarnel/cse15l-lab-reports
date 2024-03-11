@@ -25,7 +25,7 @@ I have attached multiple screenshots. Please help!
 Anonymous TA: Hello! I don't want to answer your question with nothing but the correct code.
 You won't learning anything if I do! But I will say your implementation of the multiply method looks
 similiar to what was talked about in lecture. Your method is definitely doing arithmetic.
-The first thing I would recommend is you've created nice fields to use in your asserts, and your not using them.
+The first thing I would recommend is you've created nice fields to use in your test methods, and your not using them.
 In general, I would highly recommend taking a closer look at your test methods, and take a look
 at how the professor wrote his tests in Lecture 4! Specifically, what is the difference between assertSame and
 asssertEquals? Start early start often!
