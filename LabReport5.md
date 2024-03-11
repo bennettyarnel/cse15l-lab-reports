@@ -25,9 +25,9 @@ I have attached multiple screenshots. Please help!
 Anonymous TA: Hello! I don't want to answer your question with nothing but the correct code.
 You won't learning anything if I do! But I will say your implementation of the multiply method looks
 similiar to what was talked about in lecture. Your method is definitely doing arithmetic.
-I would highly recommend taking a closer look at your test methods, and take a look
-at how the professor wrote his tests in Lecture 4!
-Specifically, what is the difference between assertSame and
+The first thing I would recommend is you've created nice fields to use in your asserts, and your not using them.
+In general, I would highly recommend taking a closer look at your test methods, and take a look
+at how the professor wrote his tests in Lecture 4! Specifically, what is the difference between assertSame and
 asssertEquals? Start early start often!
 ```
 
@@ -37,18 +37,19 @@ asssertEquals? Start early start often!
 Anonymous Student: Aha! It turns out the assert statement I'm using in my test, the
 assertSame statement, checks whether the expected and the actual fields are pointing
 to the same object in memory, not that they have the same value. I also had an incorrect
-arithmetic assumption in my first and second test. 
+arithmetic assumption in my first and second test. Additionally, I was incorrectly hardcoding my
+test cases using numbers instead of the fields I created in my tests. 
 I have correctly updated my test class to reflect this change:
 ```
 
-![image](ss6.png)
+![image](ss9.png)
 
 ![image](ss5.png)
 
 ## Step 4
 
 ### File and Directory Structure
-The ```test.sh``` file and the ```Mutiply.java``` file and the ```TestMultiply.java``` file are all in the ```list-examples-grader-2``` directory. The student is responsible for editing the file.
+The `test.sh` file and the `Mutiply.java` file and the `TestMultiply.java` file are all in the `list-examples-grader-2` directory. The reason for this is I used an existing directory from lab which already contained some useful setup. 
 
 ### Pre Bug-Fix Files
 ![image](ss1.png)
@@ -63,10 +64,9 @@ I then used the command `vim TestMultiply.java` to enter the file and used the `
 
 ### What To Edit
 The `TestMultiply.java` file uses an assert statement meant to compare if two objects are the same, meaning they point to the same place in memory. In this case, the actual `multiply` method
-works with the primitive type `int ` only, and does not even return an object. Because the method is built to use `int` and not `Integer`, you get a somewhat confusing error message which I thought was interesting because
-your not actually told anything about objects, just that the test expected a number and didn't get it. In reality, in the `testJustPostives` test method for example, the error is same that the `Integer` object 161 does not point to the same place in memory as the 
-`int` 161. This is the same in the other test cases. Fixing this requires changing the assert statement from ```assertSame``` to ```assertEquals```, because ```assertEquals``` deals with values not locations. 
-There is also a error in the third test case where the numbers in the method call, when multiplied together, would not actually give the expected value. This was also changed by the student. 
+works with the primitive type `int` only, and does not even return an object. Because the method is built to use `int` and not `Integer`, you get a somewhat confusing error message which I thought was interesting because your not actually told anything about objects, just that the test expected a number and didn't get it. In reality, in the `testJustPostives` test method for example, the error is same that the `Integer` object 161 does not point to the same place in memory as the 
+`int` 161. The students initial other test cases sort of mask this affect of assertSame, even if all three tests had the correct math, they would fail because they are comparing two different `Integer` objects, but the initial student reaction is that something is wrong with the math. Fixing this requires changing the assert statement from `assertSame` to `assertEquals`, because `assertEquals` deals with values not locations. Additionally to avoid the errors resulting in incorrect hardcoding one needs to use the `num` fields created in the test. 
+
 
 # Part 2
 Throughout the second half of this quarter, I had the opportunity to explore several intriguing applications of `git` commands: `git add`, `git commit`, and `git push`. I thought the application of `git` in general was very cool and answered a lot of questions I had, because before this class I could not have told you the difference between `git` and Github.  
