@@ -26,7 +26,9 @@ Anonymous TA: Hello! I don't want to answer your question with nothing but the c
 You won't learning anything if I do! But I will say your implementation of the multiply method looks
 similiar to what was talked about in lecture. Your method is definitely doing arithmetic.
 I would highly recommend taking a closer look at your test methods, and take a look
-at how the professor wrote his tests in Lecture 4! Start early start often!
+at how the professor wrote his tests in Lecture 4!
+Specifically, what is the difference between assertSame and
+asssertEquals? Start early start often!
 ```
 
 ## Step 3
@@ -35,7 +37,7 @@ at how the professor wrote his tests in Lecture 4! Start early start often!
 Anonymous Student: Aha! It turns out the assert statement I'm using in my test, the
 assertSame statement, checks whether the expected and the actual fields are pointing
 to the same object in memory, not that they have the same value. I also had an incorrect
-arithmetic assumption in my third test!
+arithmetic assumption in my first and second test. 
 I have correctly updated my test class to reflect this change:
 ```
 
